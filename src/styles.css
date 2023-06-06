@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #e0e0e0;
+  color: rgb(60, 60, 60);
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background: #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  display: block;
+  color: #000;
+  font-size: 1.25rem;
+  padding: .6rem 1.5rem;
+  border-radius: 3rem;
+  transition: .2s;
+  margin: 0 .3rem;
+}
+
+.navbar ul li a:hover {
+  color: #fff;
+  background: #000;
+}
+
+.navbar ul li a.active {
+  color: #fff;
+  background: #000;
+}
+
+#banner {
+  height: 600px;
+  background-image: url("/assets/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jobsearch-container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#details-text {
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 10px whitesmoke;
+}
+
+.name-label,
+.email-label,
+.location-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px whitesmoke;
+}
+
+#details-text,
+#name,
+#email,
+#location,
+#submit-btn {
+  margin: .7rem 0;
+}
+
+#name,
+#email,
+#location {
+  padding: .4rem 2rem;
+  border: none;
+  border-radius: .7rem;
+  box-shadow: 1px 1px 10px black;
+}
+
+#submit-btn {
+  padding: .8rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: .7rem;
+  box-shadow: 1px 1px 10px black;
+  cursor: pointer;
+}
+
+#info {
+  padding: 3rem;
+  text-align: center;
+}
+
+.info-title {
+  font-size: 1.8rem;
+}
+
+hr {
+  margin: 2.5rem auto 0 auto;
+  width: 400px;
+  height: 5px;
+  border-radius: 7px;
+  background-color: #000;
+}
+
+.info-text {
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  padding: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-brands {
+  font-size: 1.5rem;
+  color: rgb(92, 92, 92);
+  margin: 1rem;
+}
+
+.google-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.map {
+  margin-bottom: .8rem;
+}
+
+.map-text {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #bababa;
+    margin: 6px 0;
+  }
+
+  .navbar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: .5s;
+    overflow: hidden;
+  }
+
+  .navbar.active {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar ul {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    transition: .35s;
+    opacity: 0;
+  }
+
+  .navbar.active ul {
+    opacity: 1;
+  }
+
+  .navbar ul li a {
+    color: #fff;
+  }
+
+  .navbar ul li a:hover {
+    color: #000;
+    background: #fff;
+  }
+  
+  .navbar ul li a.active {
+    color: #000;
+    background: #fff;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  #details-text {
+    font-size: 1.4rem;
+  }
+
+  .name-label,
+  .email-label,
+  .location-label {
+    font-size: 1rem;
+  }
+
+  #submit-btn {
+    padding: .6rem .8rem;
+  }
+
+  .info-title {
+    font-size: 1.5rem;
+  }
+
+  .info-text {
+    font-size: 1.1rem;
+  }
+
+  .footer-links {
+    padding: 1.5rem;
+  }
+  
+  .fa-brands {
+    font-size: 1.3rem;
+  }
+
+  .map-text {
+    font-size: 1rem;
+  }
+}

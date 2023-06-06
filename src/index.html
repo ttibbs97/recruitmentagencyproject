@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recruitment Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Upfront Solutions</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="banner">
+      <div class="jobsearch-container">
+        <h2 id="details-text">Looking for work? Enter your details below</h2>
+        <form class="details-form" action="submit">
+          <label for="name" class="name-label">Name</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email" class="email-label">Email/Phone No.</label>
+          <input type="email" name="email" id="email" required />
+          <label for="location" class="location-label">Location</label>
+          <input type="text" name="location" id="location" required />
+          <button id="submit-btn">Submit Details</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="info">
+      <div class="info-container">
+        <h1 class="info-title">
+          Recruitment agency specialising in exceptional staff
+        </h1>
+        <hr />
+        <p class="info-text">
+          Headquartered in London, we are a recruitment agency that specialises
+          in matching exceptional support staff to top businesses and private
+          individuals globally. Initially set up in 2001 as an administrative
+          recruitment agency with a focus on personal assistant (PA)
+          recruitment, secretarial recruitment and virtual services, we have
+          since expanded our areas of expertise to encompass HR recruitment,
+          financial recruitment, private staff recruitment, hospitality staff
+          recruitment and technology recruitment. Tiger brings a fiercely
+          distinctive approach to hiring staff. As a Certified B Corp, our brand
+          is synonymous with excellence, positivity, integrity, dedication and
+          gravitas and we aim to deliver an exceptional service to our clients
+          and candidates in everything we do. Our expert consultants only work
+          with high-calibre individuals and offer a tailored approach to
+          recruitment in London and beyond. This is what makes us one of the
+          market-leading permanent and temp recruitment agencies in London.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <ul class="footer-links">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.151082276132!2d-0.12268278421674936!3d51.501008517456646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760550e8d603d1%3A0xb00c06d6a5a196a3!2sWestminster%20Bridge!5e0!3m2!1sen!2suk!4v1622719573057!5m2!1sen!2suk"
+            width="150"
+            height="150"
+            style="border: 0"
+            allowfullscreen="yes"
+            loading="lazy"
+            class="map"
+          ></iframe>
+          <h3 class="map-text">
+            Located in Central London, operating across England
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
